@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static by.epam.training.jwd.task03.constant.Pattern.*;
+
 public class ContentRetriever {
 
     static String getTagName(String data){
@@ -22,7 +24,7 @@ public class ContentRetriever {
     }
 
     static List<Attribute> getTagAttribute(String data){
-        Pattern pattern = Pattern.compile("(\\b\\w+\\b)\\s*=\\s*(\"[^\"]*\"|'[^']*'|[^\"'<>\\s]+)");
+        Pattern pattern = Pattern.compile(ATTRIBUTE);
         Matcher matcher = pattern.matcher(data);
         ArrayList<Attribute> attrs = new ArrayList<>();
         while (matcher.find())
