@@ -1,23 +1,31 @@
 package by.epam.training.jwd.task03.reader;
 
+import by.epam.training.jwd.task03.exception.NotXmlException;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static by.epam.training.jwd.task03.constant.Pattern.*;
+
 public class XMLReader implements BasicReader {
-    private String FILE_PATH;
+    private String filePath;
 
     public XMLReader(){}
 
-    public XMLReader(String FILE_PATH) {
-        this.FILE_PATH = FILE_PATH;
+    public XMLReader(String filePath) {
+        this.filePath = filePath;
     }
 
-    public List<String> read() throws IOException {
+    public List<String> read() throws IOException, NotXmlException {
+        File file = new File(filePath);
+
+        if (!isXML(file)){
+            throw new NotXmlException();
+        }
         List<String> content = new ArrayList<>();
         String line;
 
-        File file = new File(FILE_PATH);
         FileReader fileReader = new FileReader(file);
         BufferedReader reader = new BufferedReader(fileReader);
 
@@ -37,11 +45,15 @@ public class XMLReader implements BasicReader {
         return content;
     }
 
-    public String getFILE_PATH() {
-        return FILE_PATH;
+    private boolean isXML(File file){
+        return file.getName().matches(XML_EXTENTION);
     }
 
-    public void setFILE_PATH(String FILE_PATH) {
-        this.FILE_PATH = FILE_PATH;
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
     }
 }

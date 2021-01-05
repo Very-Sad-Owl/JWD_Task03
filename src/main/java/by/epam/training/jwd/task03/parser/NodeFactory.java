@@ -2,7 +2,6 @@ package by.epam.training.jwd.task03.parser;
 
 import by.epam.training.jwd.task03.entity.Attribute;
 import by.epam.training.jwd.task03.entity.Node;
-import org.w3c.dom.Attr;
 
 import java.util.List;
 

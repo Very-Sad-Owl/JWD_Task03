@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface BasicSplitter {
 
-    boolean validate(List<String> content);
+    List<String> split(List<String> content);
 }

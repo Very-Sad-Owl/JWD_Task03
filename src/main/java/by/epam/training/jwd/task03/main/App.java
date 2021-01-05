@@ -1,4 +1,4 @@
-package by.epam.training.jwd.task03;
+package by.epam.training.jwd.task03.main;
 
 /**
  * Hello world!

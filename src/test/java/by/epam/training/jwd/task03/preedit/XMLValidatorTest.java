@@ -24,8 +24,8 @@ public class XMLValidatorTest {
         expected.add("<body>Don't forget me this weekend!</body>");
         expected.add("</note>");
 
-        XMLSplitter validator = new XMLSplitter();
-        List<String> actual = validator.splitByTags(arg);
+        SplitterByTags validator = new SplitterByTags();
+        List<String> actual = validator.split(arg);
 
         assertEquals(expected, actual);
     }

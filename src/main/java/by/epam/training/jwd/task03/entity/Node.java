@@ -22,6 +22,7 @@ public class Node {
 		this.name = name;
 	}
 
+
 	public void addAtrribute(Attribute attribute){
 		if (attributes == null) {
 			attributes = new ArrayList<>();

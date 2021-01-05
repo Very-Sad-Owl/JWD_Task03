@@ -2,15 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f43e6b0-7728-44d5-9106-eba1a2ff85bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/parser/NodeParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/exception/NotXmlException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/main/RecursiveNodePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/main/RecursiveNodePrinterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/main/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/constant/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/constant/Pattern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/entity/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/entity/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/ContentRetriever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/ContentRetriever.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeDirector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/training/jwd/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/preedit/XMLSplitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/preedit/XMLSplitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/reader/BasicReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/reader/BasicReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/reader/XMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/reader/XMLReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/parser/ContentRetrieverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/parser/ContentRetrieverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/reader/XMLBasicReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/reader/XMLBasicReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/constant/Pattern.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/constant/Pattern.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/entity/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/entity/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/parser/ContentRetriever.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/parser/ContentRetriever.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/parser/NodeFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/parser/NodeParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/parser/NodeParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/reader/BasicReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/reader/BasicReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/reader/XMLReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/epam/training/jwd/task03/reader/XMLReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/by/epam/training/jwd/task03/parser/ContentRetrieverTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/training/jwd/task03/parser/ContentRetrieverTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/by/epam/training/jwd/task03/parser/NodeParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/training/jwd/task03/parser/NodeParserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/by/epam/training/jwd/task03/reader/XMLBasicReaderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/by/epam/training/jwd/task03/reader/XMLBasicReaderTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/preedit/XMLSplitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="143">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,30 +53,29 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/entity/Attribute.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/entity/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1361">
-              <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
+            <state relative-caret-position="40">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
+                <element signature="e#728#729#0" expanded="true" />
                 <element signature="e#746#747#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
                 <element signature="e#805#806#0" expanded="true" />
+                <element signature="e#847#848#0" expanded="true" />
                 <element signature="e#871#872#0" expanded="true" />
+                <element signature="e#928#929#0" expanded="true" />
                 <element signature="e#963#964#0" expanded="true" />
+                <element signature="e#1000#1001#0" expanded="true" />
                 <element signature="e#1024#1025#0" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
                 <element signature="e#1111#1112#0" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
                 <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="e#1204#1205#0" expanded="true" />
                 <element signature="e#1233#1234#0" expanded="true" />
                 <element signature="e#1645#1646#0" expanded="true" />
                 <element signature="e#1730#1731#0" expanded="true" />
@@ -68,22 +85,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+            <state relative-caret-position="620">
+              <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,15 +97,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/util/ArrayDeque.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeDirector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="577" column="22" selection-start-line="577" selection-start-column="16" selection-end-line="577" selection-end-column="22" />
+            <state relative-caret-position="140">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
-                <element signature="e#18805#18806#0" expanded="true" />
-                <element signature="e#18832#18833#0" expanded="true" />
-                <element signature="e#19268#19269#0" expanded="true" />
-                <element signature="e#19304#19305#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,26 +111,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/parser/NodeParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="223">
+              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/preedit/BasicSplitter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/constant/Pattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="82" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/ContentRetriever.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-100">
-              <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+            <state relative-caret-position="60">
+              <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -138,9 +140,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -166,25 +169,33 @@
         <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/validation/XMLValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/storage/NodesStack.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/entity/Attribute.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/parser/ContentRetrieverTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/validation/XMLValidator.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/validation/XMLValidatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/validation/BasicValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/validation/BasicSplitter.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/preedit/BasicSplitter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/constant/Pattern.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/ContentRetriever.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/entity/Node.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/parser/NodeParserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/exception/NotXmlException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/reader/XMLReader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/reader/XMLBasicReaderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/ContentRetriever.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/parser/ContentRetrieverTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/main/RecursiveNodePrinter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/main/RecursiveNodePrinterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/entity/Node.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeDirector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/preedit/XMLSplitter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/constant/Pattern.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1300" />
+    <option name="height" value="920" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -193,6 +204,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,7 +245,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="task03" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JWD_Task03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JWD_Task03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="task03" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JWD_Task03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JWD_Task03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="task03" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JWD_Task03" type="b2602c69:ProjectViewProjectNode" />
@@ -305,16 +335,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1609605176387" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1609852903514" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../parserWholeDoc" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../parserByLine" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -324,6 +354,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="by.epam.training.jwd.task03.main" />
       <recent name="by.epam.training.jwd.task03.parser" />
       <recent name="by.epam.training.jwd.task03.validation" />
       <recent name="by.epam.training.jwd.reader" />
@@ -349,33 +380,17 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.NodeParserTest.parse">
-    <configuration name="ContentRetrieverTest.getTagAttrs_" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContentRetrieverTest.getTagAttrs_noAttrs_emptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWD_Task03" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.training.jwd.task03.parser.*" />
+          <option name="PATTERN" value="by.epam.training.jwd.task03.parser.NodeFactory" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.epam.training.jwd.task03.parser" />
       <option name="MAIN_CLASS_NAME" value="by.epam.training.jwd.task03.parser.ContentRetrieverTest" />
-      <option name="METHOD_NAME" value="getTagAttrs_" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContentRetrieverTest.getTagContent_" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JWD_Task03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.epam.training.jwd.task03.parser.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="by.epam.training.jwd.task03.parser" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.training.jwd.task03.parser.ContentRetrieverTest" />
-      <option name="METHOD_NAME" value="getTagContent_" />
+      <option name="METHOD_NAME" value="getTagAttrs_noAttrs_emptyList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -385,7 +400,7 @@
       <module name="JWD_Task03" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.training.jwd.task03.parser.*" />
+          <option name="PATTERN" value="by.epam.training.jwd.task03.parser.NodeFactory" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -397,33 +412,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMLBasicReaderTest.read_existingFile_contentList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecursiveNodePrinterTest.splitRootNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWD_Task03" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.training.jwd.task03.reader.*" />
+          <option name="PATTERN" value="by.epam.training.jwd.task03.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.epam.training.jwd.task03.reader" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.training.jwd.task03.reader.XMLBasicReaderTest" />
-      <option name="METHOD_NAME" value="read_existingFile_contentList" />
+      <option name="PACKAGE_NAME" value="by.epam.training.jwd.task03.main" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.training.jwd.task03.main.RecursiveNodePrinterTest" />
+      <option name="METHOD_NAME" value="splitRootNode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMLValidatorTest.buildOpeningTagsLines_" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecursiveNodePrinterTest.splitRootNode_withAttrs_someString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWD_Task03" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.training.jwd.task03.preedit.*" />
+          <option name="PATTERN" value="by.epam.training.jwd.task03.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.epam.training.jwd.task03.preedit" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.training.jwd.task03.preedit.XMLValidatorTest" />
-      <option name="METHOD_NAME" value="buildOpeningTagsLines_" />
+      <option name="PACKAGE_NAME" value="by.epam.training.jwd.task03.main" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.training.jwd.task03.main.RecursiveNodePrinterTest" />
+      <option name="METHOD_NAME" value="splitRootNode_withAttrs_someString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecursiveNodePrinterTest.splitRootNode_withoutAttrAndInnerNodes_someString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWD_Task03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.training.jwd.task03.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="by.epam.training.jwd.task03.main" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.training.jwd.task03.main.RecursiveNodePrinterTest" />
+      <option name="METHOD_NAME" value="splitRootNode_withoutAttrAndInnerNodes_someString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -432,10 +463,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.NodeParserTest.parse" />
-        <item itemvalue="JUnit.XMLValidatorTest.buildOpeningTagsLines_" />
-        <item itemvalue="JUnit.XMLBasicReaderTest.read_existingFile_contentList" />
-        <item itemvalue="JUnit.ContentRetrieverTest.getTagAttrs_" />
-        <item itemvalue="JUnit.ContentRetrieverTest.getTagContent_" />
+        <item itemvalue="JUnit.RecursiveNodePrinterTest.splitRootNode_withAttrs_someString" />
+        <item itemvalue="JUnit.RecursiveNodePrinterTest.splitRootNode_withoutAttrAndInnerNodes_someString" />
+        <item itemvalue="JUnit.RecursiveNodePrinterTest.splitRootNode" />
+        <item itemvalue="JUnit.ContentRetrieverTest.getTagAttrs_noAttrs_emptyList" />
       </list>
     </recent_temporary>
   </component>
@@ -454,47 +485,51 @@
       <workItem from="1609329022947" duration="5391000" />
       <workItem from="1609413016348" duration="4947000" />
       <workItem from="1609496328349" duration="13797000" />
-      <workItem from="1609583373162" duration="12303000" />
+      <workItem from="1609583373162" duration="13690000" />
+      <workItem from="1609796094580" duration="608000" />
+      <workItem from="1609827718402" duration="599000" />
+      <workItem from="1609836147280" duration="7072000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NodeParserTest_parse - 2021.01.02 at 17h 58m 31s.xml">
+    <history-entry file="RecursiveNodePrinterTest_splitRootNode_withoutAttrAndInnerNodes_someString - 2021.01.05 at 15h 44m 30s.xml">
+      <configuration name="RecursiveNodePrinterTest.splitRootNode_withoutAttrAndInnerNodes_someString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecursiveNodePrinterTest_splitRootNode_withAttrs_someString - 2021.01.05 at 15h 48m 48s.xml">
+      <configuration name="RecursiveNodePrinterTest.splitRootNode_withAttrs_someString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecursiveNodePrinterTest_splitRootNode_withAttrs_someString - 2021.01.05 at 15h 49m 39s.xml">
+      <configuration name="RecursiveNodePrinterTest.splitRootNode_withAttrs_someString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecursiveNodePrinterTest_splitRootNode_withoutAttrAndInnerNodes_someString - 2021.01.05 at 15h 50m 19s.xml">
+      <configuration name="RecursiveNodePrinterTest.splitRootNode_withoutAttrAndInnerNodes_someString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecursiveNodePrinterTest_splitRootNode_withAttrs_someString - 2021.01.05 at 15h 50m 36s.xml">
+      <configuration name="RecursiveNodePrinterTest.splitRootNode_withAttrs_someString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecursiveNodePrinterTest_splitRootNode_withAttrs_someString - 2021.01.05 at 15h 52m 49s.xml">
+      <configuration name="RecursiveNodePrinterTest.splitRootNode_withAttrs_someString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecursiveNodePrinterTest_splitRootNode_withAttrs_someString - 2021.01.05 at 15h 53m 25s.xml">
+      <configuration name="RecursiveNodePrinterTest.splitRootNode_withAttrs_someString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecursiveNodePrinterTest_splitRootNode_withAttrs_someString - 2021.01.05 at 15h 54m 03s.xml">
+      <configuration name="RecursiveNodePrinterTest.splitRootNode_withAttrs_someString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NodeParserTest_parse - 2021.01.05 at 15h 54m 35s.xml">
       <configuration name="NodeParserTest.parse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NodeParserTest_parse - 2021.01.02 at 18h 02m 11s.xml">
-      <configuration name="NodeParserTest.parse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NodeParserTest_parse - 2021.01.02 at 18h 20m 07s.xml">
-      <configuration name="NodeParserTest.parse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NodeParserTest_parse - 2021.01.02 at 18h 20m 09s.xml">
-      <configuration name="NodeParserTest.parse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NodeParserTest_parse - 2021.01.02 at 18h 23m 15s.xml">
-      <configuration name="NodeParserTest.parse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NodeParserTest_parse - 2021.01.02 at 18h 23m 27s.xml">
-      <configuration name="NodeParserTest.parse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NodeParserTest_parse - 2021.01.02 at 18h 28m 11s.xml">
-      <configuration name="NodeParserTest.parse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NodeParserTest_parse - 2021.01.02 at 18h 53m 13s.xml">
-      <configuration name="NodeParserTest.parse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NodeParserTest_parse - 2021.01.02 at 19h 31m 22s.xml">
-      <configuration name="NodeParserTest.parse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NodeParserTest_parse - 2021.01.02 at 19h 31m 27s.xml">
+    <history-entry file="NodeParserTest_parse - 2021.01.05 at 16h 17m 21s.xml">
       <configuration name="NodeParserTest.parse" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53828000" />
+    <option name="totallyTimeSpent" value="63494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -505,7 +540,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32921812" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27160493" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3100137" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -531,18 +566,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeParser.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -558,87 +581,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/reader/BasicReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/storage/NodesStack.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/reader/XMLReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/preedit/BasicSplitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/preedit/XMLSplitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/constant/Pattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="82" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/entity/Attribute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/parser/ContentRetrieverTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/reader/XMLBasicReaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/preedit/XMLValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -646,26 +589,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/ContentRetriever.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/entity/Attribute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+        <state relative-caret-position="660">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/exception/NotXmlException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="80">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#107#108#0" expanded="true" />
+            <element signature="e#130#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/util/ArrayDeque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="401">
           <caret line="577" column="22" selection-start-line="577" selection-start-column="16" selection-end-line="577" selection-end-column="22" />
           <folding>
             <element signature="e#18805#18806#0" expanded="true" />
@@ -676,28 +620,130 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/reader/BasicReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/reader/XMLBasicReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/parser/ContentRetrieverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/reader/XMLReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-277">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/main/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/main/RecursiveNodePrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/main/RecursiveNodePrinterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/ContentRetriever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeDirector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/training/jwd/task03/parser/NodeParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="223">
+          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/preedit/BasicSplitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/entity/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1361">
-          <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
+        <state relative-caret-position="40">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
             <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
             <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
             <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
             <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
             <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
             <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
             <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1204#1205#0" expanded="true" />
             <element signature="e#1233#1234#0" expanded="true" />
             <element signature="e#1645#1646#0" expanded="true" />
             <element signature="e#1730#1731#0" expanded="true" />
@@ -707,11 +753,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/parser/NodeParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+        <state relative-caret-position="620">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/preedit/XMLSplitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/training/jwd/task03/constant/Pattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
         </state>
       </provider>
     </entry>

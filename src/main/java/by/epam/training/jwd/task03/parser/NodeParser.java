@@ -28,7 +28,7 @@ public class NodeParser {
 
             matcherBeginTag = Pattern.compile(BEGIN_TAG).matcher(line);
             matcherEndTag = Pattern.compile(END_TAG).matcher(line);
-            matcherAttribute = Pattern.compile(ATTRIBUTE).matcher(line);
+            matcherAttribute = Pattern.compile(TAG_ATTRIBUTE).matcher(line);
 
             if (matcherBeginTag.matches()) {
                 node = creator.createNode(getTagName(line));

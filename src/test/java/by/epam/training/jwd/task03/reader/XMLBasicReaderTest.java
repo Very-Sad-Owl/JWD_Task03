@@ -1,5 +1,6 @@
 package by.epam.training.jwd.task03.reader;
 
+import by.epam.training.jwd.task03.exception.NotXmlException;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -11,9 +12,9 @@ public class XMLBasicReaderTest {
     XMLReader reader = new XMLReader();
 
     @Test
-    public void read_existingFile_contentList() throws IOException {
+    public void read_existingFile_contentList() throws IOException, NotXmlException {
         String file = "note.xml";
-        reader.setFILE_PATH(file);
+        reader.setFilePath(file);
         List<String> expected = new ArrayList<>();
         expected.add("<note>");
         expected.add("<to>Tove</to>");
@@ -28,9 +29,17 @@ public class XMLBasicReaderTest {
     }
 
     @Test(expected = IOException.class)
-    public void read_nonexistingFile_IOException() throws IOException {
+    public void read_noneExistingFile_IOException() throws IOException, NotXmlException {
         String file = "nonote.xml";
-        reader.setFILE_PATH(file);
+        reader.setFilePath(file);
+
+        reader.read();
+    }
+
+    @Test(expected = NotXmlException.class)
+    public void read_noneNmlFile_IOException() throws IOException, NotXmlException {
+        String file = "note.txt";
+        reader.setFilePath(file);
 
         reader.read();
     }
