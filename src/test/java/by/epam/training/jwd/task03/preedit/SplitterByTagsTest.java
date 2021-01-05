@@ -7,10 +7,10 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class XMLValidatorTest {
+public class SplitterByTagsTest {
 
     @Test
-    public void buildOpeningTagsLines_() {
+    public void split_validXml_ListOfTags() {
         List<String> arg = new ArrayList<>();
         arg.add("<note>");
         arg.add("<to>Tove</to>");
