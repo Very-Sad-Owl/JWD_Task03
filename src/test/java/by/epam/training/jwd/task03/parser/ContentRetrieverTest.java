@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
-import static by.epam.training.jwd.task03.parser.ContentRetriever.*;
+import static by.epam.training.jwd.task03.parser.util.ContentRetriever.*;
 
 public class ContentRetrieverTest {
 
     @Test
-    public void getTagName_someContent_content() {
+    public void getTagName_withoutAttrs_content() {
         String data = "<node>content</node>";
         String expected = "node";
 
@@ -22,24 +22,15 @@ public class ContentRetrieverTest {
     }
 
     @Test
-    public void getTagContent_noContent_EmptyString(){
-        String data = "notmaches";
-        String expected = "content";
-
-        String actual = getTagContent(data);
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void getTagName_someName_name() {
-        String data = "<node>content</node>";
+    public void getTagName_withAttrs_content() {
+        String data = "<node id = \"1\">content</node>";
         String expected = "node";
 
         String actual = getTagName(data);
 
         assertEquals(expected, actual);
     }
+
 
     @Test
     public void getTagName_noName_EmptyString() {
@@ -57,6 +48,16 @@ public class ContentRetrieverTest {
         String expected = "";
 
         String actual = getTagName(data);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void getTagContent_noContent_EmptyString(){
+        String data = "notmaches";
+        String expected = "";
+
+        String actual = getTagContent(data);
 
         assertEquals(expected, actual);
     }
@@ -97,4 +98,5 @@ public class ContentRetrieverTest {
 
         assertTrue(actual.isEmpty());
     }
+
 }

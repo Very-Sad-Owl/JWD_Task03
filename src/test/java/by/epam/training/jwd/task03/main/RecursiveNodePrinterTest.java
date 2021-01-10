@@ -30,4 +30,26 @@ public class RecursiveNodePrinterTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void splitRootNode_withAttrs_someString() {
+        ArrayList<String> data = new ArrayList<>();
+        data.add("<note>");
+        data.add("<to>Tove</to>");
+        data.add("<text>");
+        data.add("<heading lvl = \"1\">Reminder</heading>");
+        data.add("<body>Don't forget me this weekend!</body>");
+        data.add("</text>");
+        data.add("</note>");
+        Node node = new NodeParser().parse(data);
+        String expected =
+                "{ to : Tove }\n" +
+                        "{ heading((lvl = 1)) : Reminder }\n" +
+                        "{ body : Don't forget me this weekend! }\n";
+
+        String actual = RecursiveNodePrinter.splitRootNode(node, 0);
+        System.out.println(actual);
+
+        assertEquals(expected, actual);
+    }
 }

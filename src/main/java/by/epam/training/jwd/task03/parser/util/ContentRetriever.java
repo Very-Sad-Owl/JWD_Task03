@@ -1,4 +1,4 @@
-package by.epam.training.jwd.task03.parser;
+package by.epam.training.jwd.task03.parser.util;
 
 import by.epam.training.jwd.task03.entity.Attribute;
 
@@ -11,18 +11,19 @@ import static by.epam.training.jwd.task03.constant.Pattern.*;
 
 public class ContentRetriever {
 
-    static String getTagName(String data){
+    public static String getTagName(String data){
+        String modifiedData = clearAttributes(data);
         Pattern pattern = Pattern.compile(TAG_NAME);
-        Matcher matcher = pattern.matcher(data);
+        Matcher matcher = pattern.matcher(modifiedData);
         String tagName = "";
         if (matcher.find())
         {
             tagName = matcher.group(1);
         }
-        return tagName.replaceAll(" ", "");
+        return tagName.replaceAll("\\s", "");
     }
 
-    static List<Attribute> getTagAttribute(String data){
+    public static List<Attribute> getTagAttribute(String data){
         Pattern pattern = Pattern.compile(TAG_ATTRIBUTE);
         Matcher matcher = pattern.matcher(data);
         ArrayList<Attribute> attrs = new ArrayList<>();
@@ -36,15 +37,25 @@ public class ContentRetriever {
         return attrs;
     }
 
-    static String getTagContent(String data){
+    public static String getTagContent(String data){
+        String modifiedData = clearAttributes(data);
         String tagName = getTagName(data);
         Pattern pattern = Pattern.compile(String.format(TAG_CONTENT, tagName, tagName));
-        Matcher matcher = pattern.matcher(data);
+        Matcher matcher = pattern.matcher(modifiedData);
         String content = "";
         if (matcher.find())
         {
             content = matcher.group();
         }
         return content;
+    }
+
+    private static String clearAttributes(String line) {
+        String lineCopy = line;
+        Matcher matcher = Pattern.compile(TAG_ATTRIBUTE).matcher(line);
+        if (matcher.find()){
+            lineCopy = line.replaceAll(TAG_ATTRIBUTE, "").replaceAll("\\s", "");
+        }
+        return lineCopy;
     }
 }

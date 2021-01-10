@@ -18,7 +18,8 @@ public class XMLReader implements BasicReader {
     }
 
     public List<String> read() throws IOException, NotXmlException {
-        File file = new File(filePath);
+        ClassLoader classLoader = getClass().getClassLoader();
+        File file = new File(classLoader.getResource(filePath).getFile());
 
         if (!isXML(file)){
             throw new NotXmlException();
@@ -56,4 +57,5 @@ public class XMLReader implements BasicReader {
     public void setFilePath(String filePath) {
         this.filePath = filePath;
     }
+
 }

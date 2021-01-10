@@ -28,7 +28,7 @@ public class XMLBasicReaderTest {
         assertEquals(expected, actual);
     }
 
-    @Test(expected = IOException.class)
+    @Test(expected = NullPointerException.class)
     public void read_noneExistingFile_IOException() throws IOException, NotXmlException {
         String file = "nonote.xml";
         reader.setFilePath(file);

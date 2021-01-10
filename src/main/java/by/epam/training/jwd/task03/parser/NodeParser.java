@@ -8,7 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static by.epam.training.jwd.task03.constant.Pattern.*;
-import static by.epam.training.jwd.task03.parser.ContentRetriever.*;
+import static by.epam.training.jwd.task03.parser.util.ContentRetriever.*;
 
 public class NodeParser {
 
@@ -16,27 +16,30 @@ public class NodeParser {
 
     public Node parse(List<String> data) {
 
-        Node result = new Node();
-        NodeFactory creator = new NodeFactory();
+        Node result = Node.newBuilder().build();
         Node node;
         Node parentNode;
         Matcher matcherBeginTag;
         Matcher matcherEndTag;
         Matcher matcherAttribute;
+        Matcher matcherBeginAttribute;
 
         for (String line : data) {
 
             matcherBeginTag = Pattern.compile(BEGIN_TAG).matcher(line);
             matcherEndTag = Pattern.compile(END_TAG).matcher(line);
             matcherAttribute = Pattern.compile(TAG_ATTRIBUTE).matcher(line);
+            matcherBeginAttribute = Pattern.compile(BEGIN_TAG_WITH_ATTRS).matcher(line);
 
             if (matcherBeginTag.matches()) {
-                node = creator.createNode(getTagName(line));
+                node = Node.newBuilder().withName(getTagName(line)).build();
                 stack.push(node);
-//                if (!stack.isEmpty()){
-//                    parentNode = stack.peek();
-//                    parentNode.addChild(node);
-//                }
+
+            } else if(matcherBeginAttribute.matches()) {
+                List<Attribute> attributes = getTagAttribute(line);
+                node = Node.newBuilder().withName(getTagName(line)).withAttributes(attributes).build();
+                stack.push(node);
+
             } else if (matcherEndTag.matches()) {
                 node = stack.pop();
                 if (!stack.isEmpty()) {
@@ -47,10 +50,10 @@ public class NodeParser {
                 }
 
             } else if (matcherAttribute.find()) {
-                String name = getTagName(line);
-                String content = getTagContent(line);
                 List<Attribute> attrs = getTagAttribute(line);
-                node = creator.createNode(name, content, attrs);
+                String name = getTagName(line);
+                String content = getTagContent(line.isEmpty() ? null : line);
+                node = Node.newBuilder().withName(name).withContent(content).withAttributes(attrs).build();
 
                 if (!stack.isEmpty()) {
                     parentNode = stack.peek();
@@ -62,7 +65,7 @@ public class NodeParser {
             } else {
                 String name = getTagName(line);
                 String content = getTagContent(line);
-                node = creator.createNode(name, content);
+                node = Node.newBuilder().withName(name).withContent(content).build();
 
                 if (!stack.isEmpty()) {
                     parentNode = stack.peek();

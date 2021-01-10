@@ -11,15 +11,10 @@ public class Node {
 	private List<Node> childNodes;
 	private String content;
 
-	public Node(){}
+	private Node(){}
 
-	public Node(String name, String content){
-		this.name = name;
-		this.content = content;
-	}
-
-	public Node(String name){
-		this.name = name;
+	public static Builder newBuilder(){
+		return new Node().new Builder();
 	}
 
 
@@ -86,5 +81,35 @@ public class Node {
 				", childNodes=" + childNodes +
 				", content='" + content + '\'' +
 				'}';
+	}
+
+	public class Builder {
+
+		private Builder(){}
+
+
+		public Builder withName(String name) {
+			Node.this.name = name;
+			return this;
+		}
+
+		public Builder withContent(String content) {
+			Node.this.content = content;
+			return this;
+		}
+
+		public Builder withChildren(List<Node> children) {
+			Node.this.childNodes = children;
+			return this;
+		}
+
+		public Builder withAttributes(List<Attribute> attributes) {
+			Node.this.attributes = attributes;
+			return this;
+		}
+
+		public Node build() {
+			return Node.this;
+		}
 	}
 }
