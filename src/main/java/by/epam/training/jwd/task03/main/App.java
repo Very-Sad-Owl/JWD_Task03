@@ -1,13 +1,16 @@
 package by.epam.training.jwd.task03.main;
 
-/**
- * Hello world!
- *
- */
-public class App 
+import by.epam.training.jwd.task03.entity.Node;
+import by.epam.training.jwd.task03.service.NodeTreeBuilder;
+import by.epam.training.jwd.task03.service.NodeTreeBuilderFactory;
+
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        NodeTreeBuilderFactory factory = NodeTreeBuilderFactory.getInstance();
+        NodeTreeBuilder builder = factory.getBuilder();
+        Node rootNode = builder.parseXML("note.xml");
+        RecursiveNodePrinter.printNode(rootNode);
     }
 }

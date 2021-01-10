@@ -6,8 +6,8 @@ import by.epam.training.jwd.task03.entity.Node;
 import static by.epam.training.jwd.task03.constant.Pattern.*;
 
 public class RecursiveNodePrinter {
-// не печатает атрибуты
-    public static String splitRootNode(Node rootNode, int innerLvl) {
+
+    private static String splitRootNode(Node rootNode, int innerLvl) {
         StringBuilder result = new StringBuilder();
 
         if(rootNode.getChildNodes() == null) {

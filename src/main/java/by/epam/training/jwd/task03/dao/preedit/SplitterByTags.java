@@ -1,4 +1,4 @@
-package by.epam.training.jwd.task03.preedit;
+package by.epam.training.jwd.task03.dao.preedit;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +14,6 @@ public class SplitterByTags implements BasicSplitter {
             line = line.replaceAll(splitter, replacement);
             String[] temp = line.split(";");
             prepared.addAll(Arrays.asList(temp));
-            System.out.println(Arrays.asList(temp));
 
         }
         return prepared;

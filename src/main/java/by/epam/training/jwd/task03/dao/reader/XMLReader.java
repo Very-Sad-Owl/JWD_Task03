@@ -1,6 +1,4 @@
-package by.epam.training.jwd.task03.reader;
-
-import by.epam.training.jwd.task03.exception.NotXmlException;
+package by.epam.training.jwd.task03.dao.reader;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -8,7 +6,7 @@ import java.util.List;
 
 import static by.epam.training.jwd.task03.constant.Pattern.*;
 
-public class XMLReader implements BasicReader {
+public class XMLReader {
     private String filePath;
 
     public XMLReader(){}
@@ -17,13 +15,10 @@ public class XMLReader implements BasicReader {
         this.filePath = filePath;
     }
 
-    public List<String> read() throws IOException, NotXmlException {
+    public List<String> read() throws IOException {
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource(filePath).getFile());
 
-        if (!isXML(file)){
-            throw new NotXmlException();
-        }
         List<String> content = new ArrayList<>();
         String line;
 
