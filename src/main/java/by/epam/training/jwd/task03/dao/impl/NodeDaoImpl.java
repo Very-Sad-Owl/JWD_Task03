@@ -1,8 +1,7 @@
 package by.epam.training.jwd.task03.dao.impl;
 
 import by.epam.training.jwd.task03.dao.NodeDao;
-import by.epam.training.jwd.task03.dao.preedit.SplitterByTags;
-import by.epam.training.jwd.task03.dao.reader.XMLReader;
+import by.epam.training.jwd.task03.dao.XMLReader;
 
 import java.io.IOException;
 import java.util.ArrayList;

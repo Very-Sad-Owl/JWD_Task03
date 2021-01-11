@@ -1,4 +1,4 @@
-package by.epam.training.jwd.task03.parser.util;
+package by.epam.training.jwd.task03.service.parser.util;
 
 import by.epam.training.jwd.task03.entity.Attribute;
 

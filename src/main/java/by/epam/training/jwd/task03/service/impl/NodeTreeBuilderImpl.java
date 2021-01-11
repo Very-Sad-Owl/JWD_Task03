@@ -4,7 +4,7 @@ import by.epam.training.jwd.task03.dao.DaoFactory;
 import by.epam.training.jwd.task03.dao.NodeDao;
 import by.epam.training.jwd.task03.entity.Node;
 import by.epam.training.jwd.task03.service.NodeTreeBuilder;
-import by.epam.training.jwd.task03.parser.NodeParser;
+import by.epam.training.jwd.task03.service.parser.NodeParser;
 
 public class NodeTreeBuilderImpl implements NodeTreeBuilder {
     @Override

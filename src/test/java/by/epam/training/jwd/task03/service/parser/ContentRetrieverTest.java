@@ -1,4 +1,4 @@
-package by.epam.training.jwd.task03.parser;
+package by.epam.training.jwd.task03.service.parser;
 
 import by.epam.training.jwd.task03.entity.Attribute;
 import org.junit.Test;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
-import static by.epam.training.jwd.task03.parser.util.ContentRetriever.*;
+import static by.epam.training.jwd.task03.service.parser.util.ContentRetriever.*;
 
 public class ContentRetrieverTest {
 

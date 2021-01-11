@@ -1,4 +1,4 @@
-package by.epam.training.jwd.task03.parser;
+package by.epam.training.jwd.task03.service.parser;
 
 import by.epam.training.jwd.task03.entity.Attribute;
 import by.epam.training.jwd.task03.entity.Node;
@@ -8,7 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static by.epam.training.jwd.task03.constant.Pattern.*;
-import static by.epam.training.jwd.task03.parser.util.ContentRetriever.*;
+import static by.epam.training.jwd.task03.service.parser.util.ContentRetriever.*;
 
 public class NodeParser {
 

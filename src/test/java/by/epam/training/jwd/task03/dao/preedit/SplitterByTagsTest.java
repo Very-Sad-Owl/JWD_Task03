@@ -1,5 +1,6 @@
 package by.epam.training.jwd.task03.dao.preedit;
 
+import by.epam.training.jwd.task03.dao.impl.SplitterByTags;
 import org.junit.Test;
 
 import java.util.ArrayList;

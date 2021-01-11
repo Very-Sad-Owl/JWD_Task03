@@ -1,5 +1,6 @@
 package by.epam.training.jwd.task03.dao.reader;
 
+import by.epam.training.jwd.task03.dao.XMLReader;
 import org.junit.Test;
 
 import java.io.IOException;

@@ -10,6 +10,4 @@ public interface Pattern {
     String TAG_NAME = "<([^<> ]+)>";
     String TAG_CONTENT = "(?<=<%s>)(.*?)(?=<\\/%s>)";
     String ATTRIBUTE_PATTERN = "(%s = %s)";
-    String OUTPUT_ELEMENT_PATTERN = "{ %s : %s }\n";
-    String OUTPUT_ELEMENT_WITH_ATTRIBUTES_PATTERN = "{ %s(%s) : %s }\n";
 }

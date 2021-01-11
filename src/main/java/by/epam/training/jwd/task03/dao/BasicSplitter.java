@@ -1,4 +1,4 @@
-package by.epam.training.jwd.task03.dao.preedit;
+package by.epam.training.jwd.task03.dao;
 
 import java.util.List;
 

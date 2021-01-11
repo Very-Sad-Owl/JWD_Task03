@@ -1,7 +1,7 @@
 package by.epam.training.jwd.task03.main;
 
 import by.epam.training.jwd.task03.entity.Node;
-import by.epam.training.jwd.task03.parser.NodeParser;
+import by.epam.training.jwd.task03.service.parser.NodeParser;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -34,9 +34,11 @@ public class RecursiveNodePrinterTest {
         data.add("</note>");
         Node node = new NodeParser().parse(data);
         String expected =
-                "{ to : Tove }\n" +
-                        "{ heading : Reminder }\n" +
-                        "{ body : Don't forget me this weekend! }\n";
+                "note\n" +
+                        "\tto Tove\n" +
+                        "\ttext\n" +
+                        "\t\theading Reminder\n" +
+                        "\t\tbody Don't forget me this weekend!";
 
         String actual = (String)splitRootNode.invoke(splitRootNode, node, 0);
 
@@ -55,9 +57,11 @@ public class RecursiveNodePrinterTest {
         data.add("</note>");
         Node node = new NodeParser().parse(data);
         String expected =
-                "{ to : Tove }\n" +
-                        "{ heading((lvl = 1)) : Reminder }\n" +
-                        "{ body : Don't forget me this weekend! }\n";
+                "note\n" +
+                        "\tto Tove\n" +
+                        "\ttext\n" +
+                        "\t\theading(lvl = 1) Reminder\n" +
+                        "\t\tbody Don't forget me this weekend!";
 
         String actual = (String)splitRootNode.invoke(splitRootNode, node, 0);
 
