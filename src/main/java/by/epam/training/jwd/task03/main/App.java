@@ -10,7 +10,7 @@ public class App
     {
         NodeTreeBuilderFactory factory = NodeTreeBuilderFactory.getInstance();
         NodeTreeBuilder builder = factory.getBuilder();
-        Node rootNode = builder.parseXML("note.xml");
+        Node rootNode = builder.parseXML("note2.xml");
         RecursiveNodePrinter.printNode(rootNode);
     }
 }

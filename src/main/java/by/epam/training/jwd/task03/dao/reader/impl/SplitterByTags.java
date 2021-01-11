@@ -13,6 +13,7 @@ public class SplitterByTags implements BasicSplitter {
         String splitter = "> +<|><";
         String replacement = ">;<";
         for (String line : content) {
+            line = line.replaceFirst("^\\s*", "");
             line = line.replaceAll(splitter, replacement);
             String[] temp = line.split(";");
             prepared.addAll(Arrays.asList(temp));

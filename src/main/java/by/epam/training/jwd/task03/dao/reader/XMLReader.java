@@ -7,17 +7,17 @@ import java.util.List;
 import static by.epam.training.jwd.task03.constant.Pattern.*;
 
 public class XMLReader {
-    private String filePath;
+    private String fileName;
 
     public XMLReader(){}
 
-    public XMLReader(String filePath) {
-        this.filePath = filePath;
+    public XMLReader(String fileName) {
+        this.fileName = fileName;
     }
 
     public List<String> read() throws IOException {
         ClassLoader classLoader = getClass().getClassLoader();
-        File file = new File(classLoader.getResource(filePath).getFile());
+        File file = new File(classLoader.getResource(fileName).getFile());
 
         List<String> content = new ArrayList<>();
         String line;
@@ -45,12 +45,12 @@ public class XMLReader {
         return file.getName().matches(XML_EXTENTION);
     }
 
-    public String getFilePath() {
-        return filePath;
+    public String getFileName() {
+        return fileName;
     }
 
-    public void setFilePath(String filePath) {
-        this.filePath = filePath;
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 
 }

@@ -13,7 +13,7 @@ public class XMLReaderTest {
     @Test
     public void read_existingFile_contentList() throws IOException {
         String file = "note.xml";
-        reader.setFilePath(file);
+        reader.setFileName(file);
         List<String> expected = new ArrayList<>();
         expected.add("<note>");
         expected.add("<to>Tove</to>");
@@ -30,7 +30,7 @@ public class XMLReaderTest {
     @Test(expected = NullPointerException.class)
     public void read_noneExistingFile_IOException() throws IOException {
         String file = "nonote.xml";
-        reader.setFilePath(file);
+        reader.setFileName(file);
 
         reader.read();
     }
