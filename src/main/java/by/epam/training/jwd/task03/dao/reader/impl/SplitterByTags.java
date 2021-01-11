@@ -1,6 +1,6 @@
-package by.epam.training.jwd.task03.dao.impl;
+package by.epam.training.jwd.task03.dao.reader.impl;
 
-import by.epam.training.jwd.task03.dao.BasicSplitter;
+import by.epam.training.jwd.task03.dao.reader.BasicSplitter;
 
 import java.util.ArrayList;
 import java.util.Arrays;

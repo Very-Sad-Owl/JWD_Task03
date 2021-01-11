@@ -1,6 +1,5 @@
 package by.epam.training.jwd.task03.dao.reader;
 
-import by.epam.training.jwd.task03.dao.XMLReader;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -8,8 +7,8 @@ import java.util.ArrayList;
 import static org.junit.Assert.*;
 import java.util.List;
 
-public class XMLBasicReaderTest {
-    XMLReader reader = new XMLReader();
+public class XMLReaderTest {
+    private XMLReader reader = new XMLReader();
 
     @Test
     public void read_existingFile_contentList() throws IOException {

@@ -1,6 +1,5 @@
-package by.epam.training.jwd.task03.dao.preedit;
+package by.epam.training.jwd.task03.dao.reader.impl;
 
-import by.epam.training.jwd.task03.dao.impl.SplitterByTags;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -11,7 +10,7 @@ import static org.junit.Assert.*;
 public class SplitterByTagsTest {
 
     @Test
-    public void split_validXml_ListOfTags() {
+    public void split_validXml_listOfTags() {
         List<String> arg = new ArrayList<>();
         arg.add("<note>");
         arg.add("<to>Tove</to>");

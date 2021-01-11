@@ -10,7 +10,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 public class NodeParserTest {
-    NodeParser parser = new NodeParser();
+    private NodeParser parser = new NodeParser();
 
     @Test
     public void parse_withoutAttrs_rootNode() {

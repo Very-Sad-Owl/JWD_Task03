@@ -1,4 +1,4 @@
-package by.epam.training.jwd.task03.dao;
+package by.epam.training.jwd.task03.dao.reader;
 
 import java.io.*;
 import java.util.ArrayList;
