@@ -27,17 +27,26 @@ public class Attribute {
 	}
 
 	@Override
-	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (!(o instanceof Attribute)) return false;
-		Attribute attribute = (Attribute) o;
-		return Objects.equals(getName(), attribute.getName()) &&
-				Objects.equals(getContent(), attribute.getContent());
+	public boolean equals(Object obj) {
+		if (this == obj) { return true; }
+		if (null == obj) { return false; }
+		if (getClass() != obj.getClass()) { return false; }
+
+		Attribute attribute = (Attribute) obj;
+		if (null == name) {
+			return name == attribute.name;
+		} else if (null == content) {
+			return content == attribute.content;
+		}
+
+		return true;
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(getName(), getContent());
+		int result = 1;
+		return (31 * result + (null == name ? 0 : name.hashCode()) +
+				31 * result + (null == content ? 0: content.hashCode()));
 	}
 
 	@Override

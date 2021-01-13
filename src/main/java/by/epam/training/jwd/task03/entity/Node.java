@@ -57,23 +57,40 @@ public class Node {
 		this.content = content;
 	}
 
-	@Override
-	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (!(o instanceof Node)) return false;
-		Node node = (Node) o;
-		return Objects.equals(getName(), node.getName()) &&
-				Objects.equals(getAttributes(), node.getAttributes()) &&
-				Objects.equals(getChildNodes(), node.getChildNodes()) &&
-				Objects.equals(getContent(), node.getContent());
-	}
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) { return true; }
+        if (null == obj) { return false; }
+        if (getClass() != obj.getClass()) { return false; }
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(getName(), getAttributes(), getChildNodes(), getContent());
-	}
+        Node node = (Node)obj;
+        if (null == name) {
+			return name == node.name;
+		} else if (null == attributes) {
+        	return attributes == node.attributes;
+		} else if (null == childNodes) {
+        	return childNodes == node.childNodes;
+		} else if (null == content) {
+        	return content == node.content;
+		} else {
+        	if (!name.equals(node.name)) { return false; }
+        	else if (!attributes.equals(node.attributes)) {return false; }
+        	else if (!childNodes.equals(node.childNodes)) {return false; }
+        	else if (!content.equals(node.content)) {return false; }
+		}
+        return true;
+    }
 
-	@Override
+    @Override
+    public int hashCode() {
+		int result = 1;
+        return (31 * result + (null == name ? 0 : name.hashCode()) +
+				31 * result + (null == attributes ? 0: attributes.hashCode()) +
+				31 * result + (null == childNodes ? 0 : childNodes.hashCode()) +
+				31 * result + (null == content ? 0 : content.hashCode()));
+    }
+
+    @Override
 	public String toString() {
 		return "Node{" +
 				"name='" + name + '\'' +
