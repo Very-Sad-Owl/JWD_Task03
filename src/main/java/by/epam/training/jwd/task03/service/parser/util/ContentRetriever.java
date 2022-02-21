@@ -20,7 +20,9 @@ public class ContentRetriever {
         {
             tagName = matcher.group(1);
         }
-        return tagName.replaceAll("\\s", "");
+        tagName = tagName.replaceAll("\\s", "");
+        tagName = tagName.replaceAll("/", "");
+        return tagName;
     }
 
     public static List<Attribute> getTagAttribute(String data){

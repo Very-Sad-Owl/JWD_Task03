@@ -23,6 +23,7 @@ public class NodeParser {
         Matcher matcherEndTag;
         Matcher matcherAttribute;
         Matcher matcherBeginAttribute;
+        Matcher closedMatcherBeginAttribute;
 
         for (String line : data) {
 
@@ -30,6 +31,7 @@ public class NodeParser {
             matcherEndTag = Pattern.compile(END_TAG).matcher(line);
             matcherAttribute = Pattern.compile(TAG_ATTRIBUTE).matcher(line);
             matcherBeginAttribute = Pattern.compile(BEGIN_TAG_WITH_ATTRS).matcher(line);
+            closedMatcherBeginAttribute = Pattern.compile(CLOSED_BEGIN_TAG_WITH_ATTRS).matcher(line);
 
             if (matcherBeginTag.matches()) {
                 node = Node.newBuilder().withName(getTagName(line)).build();
@@ -39,6 +41,16 @@ public class NodeParser {
                 List<Attribute> attributes = getTagAttribute(line);
                 node = Node.newBuilder().withName(getTagName(line)).withAttributes(attributes).build();
                 stack.push(node);
+
+            } else if(closedMatcherBeginAttribute.matches()){
+                List<Attribute> attributes = getTagAttribute(line);
+                node = Node.newBuilder().withName(getTagName(line)).withAttributes(attributes).build();
+                if (!stack.isEmpty()) {
+                    parentNode = stack.peek();
+                    parentNode.addChild(node);
+                } else {
+                    result = node;
+                }
 
             } else if (matcherEndTag.matches()) {
                 node = stack.pop();

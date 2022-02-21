@@ -1,0 +1,10 @@
+<carts>
+	<cart id = "1" card_id = "1" cashier_id = "1" price = "10">
+		<slot price = "5">
+			<product id = "1" quantity = "2"/>
+		</slot>
+		<slot price = "2">
+			<product id = "2" quantity = "1"/>
+		</slot>
+	</cart>
+</carts>

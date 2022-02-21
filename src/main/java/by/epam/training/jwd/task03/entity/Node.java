@@ -2,14 +2,13 @@ package by.epam.training.jwd.task03.entity;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Node {
 	
 	private String name;
 	private List<Attribute> attributes;
 	private List<Node> childNodes;
-	private String content;
+	private String content = "";
 
 	private Node(){}
 
@@ -30,6 +29,15 @@ public class Node {
 			childNodes = new ArrayList<>();
 		}
 		childNodes.add(child);
+	}
+
+	public Attribute getAttrByName(String name){
+		for (Attribute attribute : attributes){
+			if (attribute.getName().equals(name)){
+				return attribute;
+			}
+		}
+		return new Attribute();
 	}
 	
 	public String getName() {

@@ -1,4 +1,4 @@
-package by.epam.training.jwd.task03.main;
+package by.epam.training.jwd.task03.service.parser;
 
 import by.epam.training.jwd.task03.entity.Attribute;
 import by.epam.training.jwd.task03.entity.Node;
@@ -7,24 +7,44 @@ import java.util.List;
 
 import static by.epam.training.jwd.task03.constant.Pattern.*;
 
-class RecursiveNodePrinter {
+public class RecursiveNodePrinter {
 
     private static String splitRootNode(Node rootNode, int innerLvl) {
         StringBuilder result = new StringBuilder();
 
         result.append(calculateTabulation(innerLvl));
+        result.append("<");
         result.append(rootNode.getName());
         if(rootNode.getChildNodes() == null) {
             result.append(attributesToFormattedString(rootNode.getAttributes()));
-            result.append(" ");
-            result.append(rootNode.getContent());
+//            result.append("> ");
+//            result.append(rootNode.getContent());
+//            result.append(" </");
+//            result.append(rootNode.getName());
+//            result.append(">");
+            if (rootNode.getContent().equals("")){
+                result.append("/>");
+            } else {
+                result.append("> ");
+                result.append(rootNode.getContent());
+                result.append("</");
+                result.append(rootNode.getName());
+                result.append(">");
+            }
         } else {
+            result.append(attributesToFormattedString(rootNode.getAttributes()));
+            result.append(">");
             for(Node childNode : rootNode.getChildNodes()) {
                 innerLvl++;
                 result.append("\n");
                 result.append(splitRootNode(childNode, innerLvl));
                 innerLvl--;
             }
+            result.append("\n");
+            result.append(calculateTabulation(innerLvl));
+            result.append("</");
+            result.append(rootNode.getName());
+            result.append(">");
         }
         return result.toString();
     }
@@ -48,8 +68,8 @@ class RecursiveNodePrinter {
         return tabulation.toString();
     }
 
-    static void printNode(Node node) {
-        System.out.println(splitRootNode(node, 0));
+    public static String getNodeForPrint(Node node) {
+        return splitRootNode(node, 0);
     }
 
 }

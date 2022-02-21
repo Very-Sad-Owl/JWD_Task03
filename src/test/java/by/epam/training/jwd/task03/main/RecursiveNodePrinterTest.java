@@ -1,5 +1,6 @@
 package by.epam.training.jwd.task03.main;
 
+import by.epam.training.jwd.task03.service.parser.RecursiveNodePrinter;
 import by.epam.training.jwd.task03.entity.Node;
 import by.epam.training.jwd.task03.service.parser.NodeParser;
 import org.junit.BeforeClass;
